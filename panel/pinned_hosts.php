@@ -1,1 +1,1 @@
-<?php $PINNED_HOSTS = "[\"%facebook.com\"]"; ?>
+<?php $PINNED_HOSTS = "[\"%somehost.com\"]"; ?>

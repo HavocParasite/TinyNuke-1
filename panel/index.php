@@ -172,7 +172,7 @@ else
     <div>Top Hosts</div>
     <table class="table">
 <?php
-   $sql_host = "SELECT SUBSTRING_INDEX(SUBSTRING_INDEX(SUBSTRING(url, 11, 100), '/', 1), '.', -2) as host, COUNT(*) as num FROM reports ";
+   $sql_host = "SELECT SUBSTRING_INDEX(SUBSTRING(url, 11, 100), '/', 1) as host, COUNT(*) as num FROM reports ";
    function echo_host_row($host, $num)
    {
       echo('<td style="width: 50%;"><a target="_blank" class="btn" href="reports.php?date_min=0&amp;date_max=4294967296&amp;url=%'.htmlspecialchars($host).'%&amp;content=&amp;uhids=&amp;order=0&amp;dir=0">'.htmlspecialchars($host).'</a></td><td style="width: 50%;">'.$num.'</td>');

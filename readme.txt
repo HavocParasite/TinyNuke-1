@@ -13,7 +13,7 @@ Installation:
 =============
 
  * To install the panel dump the db.sql file then login with the default panel credentials admin:pass and finally navigate to settings.php
-   (Panel does not support php running under CGI/FastCGI)
+   (Panel does not support php running under CGI/FastCGI. You also need at least php version 5.4)
  
  * Open TinyNuke.sln and provide your server Api.cpp like this:
 

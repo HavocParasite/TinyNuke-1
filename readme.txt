@@ -49,3 +49,5 @@ Known Bugs:
 ===========
 
  - The "Top Hosts" feature was hacked together and should either be fixed or more probably removed.
+
+Note: you can contact me at augustin@inzirillo.com by email or at aainz@exploit.im on jabber (I will not help you commit crime)
